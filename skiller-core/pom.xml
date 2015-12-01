@@ -14,10 +14,19 @@
         <version>1.3.0.RELEASE</version>
     </parent>
 
+    <properties>
+        <spring.security>4.0.3.RELEASE</spring.security>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${spring.security}</version>
         </dependency>
     </dependencies>
     <build>
@@ -27,5 +36,4 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-    </build>
-</project>
+    </build></project>
