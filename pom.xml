@@ -8,6 +8,10 @@
     <artifactId>skiller</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <spirng.security>4.0.3.RELEASE</spirng.security>
+    </properties>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -17,6 +21,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${spirng.security}</version>
         </dependency>
     </dependencies>
     <build>
