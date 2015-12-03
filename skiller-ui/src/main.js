@@ -1,6 +1,6 @@
-var App = console.log('Hello world from Browserify!!!');
 
-module.exports = App;
-$(function() {
-    $('#content').load('/templates/login_form.html');
-});
+var ReactDOM = require('react-dom');
+var React = require('react');
+var Login = require('./components/loginPage');
+
+ReactDOM.render(<Login />, document.getElementById('login'));
